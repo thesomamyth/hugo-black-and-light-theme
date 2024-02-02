@@ -17,9 +17,9 @@
   <title>
     {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
     {{ if eq $url "/" }}
-    {{ .Site.Title }}
+    Dominik Jarco | {{ .Site.Title }}
     {{ else }}
-    {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+    {{ if .Params.heading }} Dominik Jarco | {{ .Params.heading }} {{ else }} Dominik Jarco | {{ .Title }} {{ end }}
     {{ end }}
   </title>
   <link rel="canonical" href="{{ .Permalink }}">
